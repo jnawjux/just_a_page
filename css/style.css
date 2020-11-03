@@ -1,3 +1,10 @@
+:root {
+    --main-white: #f6f5f5;
+    --drk-blue: #070d59;
+    --lght-blue: #1f3c88;
+    --pinky: #ee6f57;
+  }
+
 body {
     margin: 0;
     font-family: 'Trispace', sans-serif;
@@ -5,9 +12,9 @@ body {
   
   
   header {
-    background: black;
+    background: var(--drk-blue);
     padding: 2em 0;
-    color: white;
+    color: var(--main-white);
   }
   
   .container {
@@ -52,13 +59,13 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     padding: 0 .5em;
-    color: white;
+    color: var(--main-white);
     font-size: .80rem;
     font-weight: 400;
   }
   
   .nav-list-link:hover, .nav-list-link:focus {
-    color: #707070;
+    color: var(--pinky);
   }
   
   h1 {
