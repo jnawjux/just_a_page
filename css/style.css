@@ -1,18 +1,67 @@
- body {
-     margin: 0;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
-
- /* Typography */
-
- h1 {
-     font-size: 2rem;
- }
-
- h2 {
-     font-size: 1.5rem;
- }
-
- /* Layout - Nav */
-
- /* Layout - Main */
+body {
+    margin: 0;
+    font-family: 'Trispace', sans-serif;
+  }
+  
+  
+  header {
+    background: black;
+    padding: 2em 0;
+    color: white;
+  }
+  
+  .container {
+      width: 90%;
+      max-width: 925px;
+      margin: 0 auto;
+  }
+  
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 675px) {
+      .container-nav {
+          flex-direction: column;
+      }
+      
+      header {
+          text-align: center;
+      }
+  }
+  
+  .name-logo {
+    text-align: center;
+    padding: 0;
+  }
+  
+  nav {
+    margin: auto 0;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .nav-list-link {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 .5em;
+    color: white;
+    font-size: .80rem;
+    font-weight: 400;
+  }
+  
+  .nav-list-link:hover, .nav-list-link:focus {
+    color: #707070;
+  }
+  
+  h1 {
+    margin: 0;
+    font-weight: 800;
+  }
